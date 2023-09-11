@@ -17,10 +17,10 @@
 				<MonitoredVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>INBOUND</DirectionRef>
-					<FramedVehicleJourneyRef>
+					<!-- <FramedVehicleJourneyRef>
 						<DataFrameRef>2023-03-17</DataFrameRef>
 						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:20230317_4-30</DatedVehicleJourneyRef>
-					</FramedVehicleJourneyRef>
+					</FramedVehicleJourneyRef> -->
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
@@ -31,6 +31,7 @@
 					<Bearing>-115</Bearing>
 					<Occupancy>full</Occupancy>
 					<Delay>PT128S</Delay>
+					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<MonitoredCall>
 						<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
@@ -51,10 +52,10 @@
 				<MonitoredVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>INBOUND</DirectionRef>
-					<FramedVehicleJourneyRef>
+					<!-- <FramedVehicleJourneyRef>
 						<DataFrameRef>2023-03-17</DataFrameRef>
 						<DatedVehicleJourneyRef>IT:ITC1:DatedVehicleJourney:busATS:20230317_4-2</DatedVehicleJourneyRef>
-					</FramedVehicleJourneyRef>
+					</FramedVehicleJourneyRef> -->
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_02A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
@@ -65,6 +66,7 @@
 					<Bearing>90</Bearing>
 					<Occupancy>fewSeatsAvailable</Occupancy>
 					<Delay>PT30S</Delay>
+					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ999ZZ</VehicleRef>
 					<MonitoredCall>
 						<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:2</StopPointRef>
