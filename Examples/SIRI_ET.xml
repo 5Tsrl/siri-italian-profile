@@ -23,7 +23,7 @@
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
-					<VehicleJourneyRef>c</VehicleJourneyRef>
+					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<RecordedCalls>
 						<RecordedCall>
