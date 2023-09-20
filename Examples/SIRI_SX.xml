@@ -54,15 +54,15 @@
 							</AffectedStopPoint>
 						</StopPoints>
 						<VehicleJourneys>
-							<AffectedVehicleJourney>
+<!--							<AffectedVehicleJourney>
 								<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:4-4</VehicleJourneyRef>
-							</AffectedVehicleJourney>
-							<!-- <AffectedVehicleJourney>
+							</AffectedVehicleJourney>-->
+							<AffectedVehicleJourney>
 								<FramedVehicleJourneyRef>
 									<DataFrameRef>2023-02-15</DataFrameRef>
-									<DatedVehicleJourneyRef>IT:ITC1:DatedVehicleJourney:busATS:20230215_4-30</DatedVehicleJourneyRef>
+									<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
 								</FramedVehicleJourneyRef>
-							</AffectedVehicleJourney>-->
+							</AffectedVehicleJourney>
 						</VehicleJourneys>
 					</Affects>
 					<Consequences>

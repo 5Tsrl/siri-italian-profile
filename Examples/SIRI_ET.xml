@@ -15,15 +15,15 @@
 				<EstimatedVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>INBOUND</DirectionRef>
-					<!-- <FramedVehicleJourneyRef>
+					<FramedVehicleJourneyRef>
 						<DataFrameRef>2023-02-15</DataFrameRef>
-						<DatedVehicleJourneyRef>IT:ITC1:DatedVehicleJourney:busATS:20230317_4-30</DatedVehicleJourneyRef>
-					</FramedVehicleJourneyRef> -->
-					<EstimatedVehicleJourneyCode>IT:ITC1:ServiceJourney:busATS:001_01_01A</EstimatedVehicleJourneyCode>
+						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
+					</FramedVehicleJourneyRef>
+<!--					<EstimatedVehicleJourneyCode>IT:ITC1:ServiceJourney:busATS:001_01_01A</EstimatedVehicleJourneyCode>-->
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
-					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
+<!--					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>-->
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<RecordedCalls>
 						<RecordedCall>
@@ -63,15 +63,15 @@
 				<EstimatedVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>INBOUND</DirectionRef>
-					<!-- <FramedVehicleJourneyRef>
+					<FramedVehicleJourneyRef>
 						<DataFrameRef>2023-02-15</DataFrameRef>
-						<DatedVehicleJourneyRef>IT:ITC1:DatedVehicleJourney:busATS:20230317_4-4</DatedVehicleJourneyRef>
-					</FramedVehicleJourneyRef> -->
-					<EstimatedVehicleJourneyCode>IT:ITC1:ServiceJourney:busATS:001_01_01A</EstimatedVehicleJourneyCode>
+						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
+					</FramedVehicleJourneyRef>
+<!--					<EstimatedVehicleJourneyCode>IT:ITC1:ServiceJourney:busATS:001_01_01A</EstimatedVehicleJourneyCode>-->
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_02A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
-					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
+<!--					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>-->
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ999ZZ</VehicleRef>
 					<RecordedCalls>
 						<RecordedCall>
