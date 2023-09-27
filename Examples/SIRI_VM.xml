@@ -31,7 +31,6 @@
 					<Bearing>-115</Bearing>
 					<Occupancy>full</Occupancy>
 					<Delay>PT128S</Delay>
-<!--					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>-->
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<MonitoredCall>
 						<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
@@ -66,7 +65,6 @@
 					<Bearing>90</Bearing>
 					<Occupancy>fewSeatsAvailable</Occupancy>
 					<Delay>PT30S</Delay>
-<!--					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>-->
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ999ZZ</VehicleRef>
 					<MonitoredCall>
 						<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:2</StopPointRef>

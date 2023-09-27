@@ -54,9 +54,6 @@
 							</AffectedStopPoint>
 						</StopPoints>
 						<VehicleJourneys>
-<!--							<AffectedVehicleJourney>
-								<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:4-4</VehicleJourneyRef>
-							</AffectedVehicleJourney>-->
 							<AffectedVehicleJourney>
 								<FramedVehicleJourneyRef>
 									<DataFrameRef>2023-02-15</DataFrameRef>
