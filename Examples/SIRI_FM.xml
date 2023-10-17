@@ -4,43 +4,40 @@
 	<ServiceDelivery>
 		<ResponseTimestamp>2023-02-15T10:33:11.695Z</ResponseTimestamp>
 		<ProducerRef>5T</ProducerRef>
-		<!-- Stato parcheggi-->
 		<FacilityMonitoringDelivery>
 			<ResponseTimestamp>2023-02-15T10:29:59+01:00</ResponseTimestamp>
 			<SubscriberRef>NAP</SubscriberRef>
 			<SubscriptionRef>0001</SubscriptionRef>
+			<!-- Stato parcheggi-->
 			<FacilityCondition>
 				<FacilityRef>IT:ITC1:Parking:parcheggiTorino:p:Porta_Nuova</FacilityRef>
 				<FacilityStatus>
 					<Status>partiallyAvailable</Status>
+					<Description>Parziale allagamento del parcheggio</Description>
 				</FacilityStatus>
 				<MonitoredCounting>
-					<CountingType>presentCount</CountingType>
-					<CountedFeatureUnit>vehicles</CountedFeatureUnit>
+					<CountingType>availabilityCount</CountingType>
+					<CountedFeatureUnit>bays</CountedFeatureUnit>
 					<TypeOfCountedFeature>
-						<TypeOfValueCode>car</TypeOfValueCode>
-						<NameOfClass>car</NameOfClass>
+						<TypeOfValueCode>privateCar</TypeOfValueCode>
+						<NameOfClass>privateCar</NameOfClass>
 					</TypeOfCountedFeature>
-					<Count>10</Count>
+					<Percentage>50</Percentage>
 				</MonitoredCounting>
 			</FacilityCondition>
-		</FacilityMonitoringDelivery>
-		<!-- Stato Stazione di Ricarica-->
-		<FacilityMonitoringDelivery>
-			<ResponseTimestamp>2023-02-15T10:29:59+01:00</ResponseTimestamp>
-			<SubscriberRef>NAP</SubscriberRef>
-			<SubscriptionRef>0001</SubscriptionRef>
+			<!-- Stato Stazione di Ricarica-->
 			<FacilityCondition>
 				<FacilityRef>IT:ITC1:Parking:StazioniRicaricaTorino:p:Porta_Nuova</FacilityRef>
 				<FacilityStatus>
 					<Status>partiallyAvailable</Status>
+					<Description>Parziale allagamento del parcheggio</Description>
 				</FacilityStatus>
 				<MonitoredCounting>
 					<CountingType>availabilityCount</CountingType>
-					<CountedFeatureUnit>otherSpaces</CountedFeatureUnit>
+					<CountedFeatureUnit>devices</CountedFeatureUnit>
 					<TypeOfCountedFeature>
-						<TypeOfValueCode>rechargeBay</TypeOfValueCode>
-						<NameOfClass>rechargeBay</NameOfClass>
+						<TypeOfValueCode>carRechargeBay</TypeOfValueCode>
+						<NameOfClass>carRechargeBay</NameOfClass>
 					</TypeOfCountedFeature>
 					<Count>15</Count>
 				</MonitoredCounting>
