@@ -49,9 +49,10 @@
 			<SubscriberRef>NAP</SubscriberRef>
 			<SubscriptionRef>0001</SubscriptionRef>
 			<FacilityCondition>
-				<FacilityRef>IT:ITC1:parcheggiBikeSharingTorino:p:Porta_Nuova</FacilityRef>
+				<FacilityRef>IT:ITC1:Parking:parcheggiBikeSharingTorino:p:Porta_Nuova</FacilityRef>
 				<FacilityStatus>
 					<Status>partiallyAvailable</Status>
+					<Description>Parziale allagamento del parcheggio</Description>
 				</FacilityStatus>
 				<MonitoredCounting>
 					<CountingType>availabilityCount</CountingType>
