@@ -16,7 +16,7 @@
 				<ValidUntilTime>2023-03-17T08:41:07</ValidUntilTime>
 				<MonitoredVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
-					<DirectionRef>INBOUND</DirectionRef>
+					<DirectionRef>inbound</DirectionRef>
 					<FramedVehicleJourneyRef>
 						<DataFrameRef>2023-03-17</DataFrameRef>
 						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
@@ -50,7 +50,7 @@
 				<ValidUntilTime>2023-03-17T08:47:07</ValidUntilTime>
 				<MonitoredVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
-					<DirectionRef>INBOUND</DirectionRef>
+					<DirectionRef>inbound</DirectionRef>
 					<FramedVehicleJourneyRef>
 						<DataFrameRef>2023-03-17</DataFrameRef>
 						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
