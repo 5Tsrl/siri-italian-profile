@@ -71,7 +71,13 @@
 			<SubscriberRef>NAP</SubscriberRef>
 			<SubscriptionRef>0001</SubscriptionRef>
 			<FacilityCondition>
-				<FacilityRef>IT:ITC1:Vehicle:BikeSharingTorino:VE:01</FacilityRef>
+				<Facility>
+					<FacilityClass>vehicle</FacilityClass>
+					<FacilityLocation>
+						<VehicleRef>IT:ITC1:Vehicle:BikeSharingTorino:VE:01</VehicleRef>
+						<OperatorRef>IT:ITC1:Operator:12345678911:BikeSharing:BikeSharing</OperatorRef>
+					</FacilityLocation>
+				</Facility>			
 				<FacilityStatus>
 					<Status>available</Status>
 				</FacilityStatus>
