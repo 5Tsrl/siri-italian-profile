@@ -23,7 +23,7 @@
 					</FramedVehicleJourneyRef>
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
-					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
+					<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
 					<VehicleLocation>
 						<Longitude>7.71378</Longitude>
 						<Latitude>45.12401</Latitude>
@@ -57,7 +57,7 @@
 					</FramedVehicleJourneyRef>
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_02A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
-					<OperatorRef>IT:ITC1:Operator:busATS:11</OperatorRef>
+					<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
 					<VehicleLocation>
 						<Longitude>7.71478</Longitude>
 						<Latitude>45.12501</Latitude>
