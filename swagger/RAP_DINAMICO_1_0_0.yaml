@@ -1,0 +1,332 @@
+openapi: 3.0.1
+info:
+  title: RAP dinamico
+  version: '1.0'
+servers:
+  - url: https://server.prod.it
+tags:
+  - name: siri
+  - name: siri.lite
+security:
+  - oauth2Auth: []
+paths:
+  /siri/subscribe:
+    post:
+      tags:
+        - siri
+      summary: Endpoint per le richieste di sottoscrizione dei flussi SIRI (SubscriptionRequest)
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/SIRI_itProfile'
+      responses:
+        '200':
+          description: risposta di sottoscrizione SIRI (SubscriptionResponse)
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+  /siri-lite/vm:
+    get:
+      tags:
+        - siri.lite
+      summary: Endpoint per le richieste SIRI LITE del flusso VM
+      parameters:
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
+          required: false
+          schema:
+            type: string
+            example: CCA-GTT
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire
+          required: false
+          schema:
+            type: number
+            example: 10
+        - name: lineRef
+          in: query
+          description: linea di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Line:1
+        - name: operatorRef
+          in: query
+          description: operatore di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Operator:123456789011:op1
+      responses:
+        '200':
+          description: dati richiesti per il flusso vm
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_xml'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+  /siri-lite/et:
+    get:
+      tags:
+        - siri.lite
+      summary: Endpoint per le richieste SIRI LITE del flusso ET
+      parameters:
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
+          required: false
+          schema:
+            type: string
+            example: CCA-GTT
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire
+          required: false
+          schema:
+            type: number
+            example: 10
+        - name: lineRef
+          in: query
+          description: linea di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Line:1
+        - name: operatorRef
+          in: query
+          description: operatore di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Operator:123456789011:op1
+      responses:
+        '200':
+          description: dati richiesti per il flusso et
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_xml'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+  /siri-lite/sx:
+    get:
+      tags:
+        - siri.lite
+      summary: Endpoint per le richieste SIRI LITE del flusso SX
+      parameters:
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
+          required: false
+          schema:
+            type: string
+            example: CCA-GTT
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire
+          required: false
+          schema:
+            type: number
+            example: 10
+      responses:
+        '200':
+          description: dati richiesti per il flusso sx
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_xml'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+  /siri-lite/fm/parking:
+    get:
+      tags:
+        - siri.lite
+      summary: Endpoint per le richieste SIRI LITE del flusso FM parcheggi
+      parameters:
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
+          required: false
+          schema:
+            type: string
+            example: PARK-TO
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire
+          required: false
+          schema:
+            type: number
+            example: 10
+        - name: facilityRef
+          in: query
+          description: identificativo del parcheggio di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Parking:1234
+      responses:
+        '200':
+          description: dati richiesti per il flusso fm dei parcheggi
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_xml'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+  /siri-lite/fm/sharing:
+    get:
+      tags:
+        - siri.lite
+      summary: Endpoint per le richieste SIRI LITE del flusso FM sharing
+      parameters:
+        - name: lat
+          in: query
+          description: latitudine del punto in cui cercare i mezzi di sharing
+          required: false
+          schema:
+            type: string
+            example: 45.05
+        - name: lon
+          in: query
+          description: longitudine del punto in cui cercare i mezzi di sharing
+          required: false
+          schema:
+            type: string
+            example: 45.05
+        - name: maxDistance
+          in: query
+          description: raggio attorno al punto specificato con lat, lon entro cui cercare i mezzi di sharing
+          required: false
+          schema:
+            type: number
+            example: 100
+        - name: operators
+          in: query
+          description: uno o più operatori (OperatorId completo come da specifiche) di cui si vuole sapere i mezzi di sharing
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+            example: IT:ITC1:Operator:123456789011:op1, IT:ITC1:Operator:123456789011:op2
+      responses:
+        '200':
+          description: dati richiesti per il flusso fm dello sharing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_xml'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+components:
+  schemas:
+    SIRI_itProfile:
+      description: xsd SIRI versione 2.1 di riferimento per il contenuto xml del meccanismo di publish/subscribe; la selezione dei flussi sottoscrivibili deve essere fatto relativamente alle limitazioni imposte dal profilo italiano
+      externalDocs:
+        description: specifiche del profilo italiano del SIRI
+        url: https://github.com/SIRI-CEN/SIRI/tree/v2.1/xsd
+    SIRI_itProfile_json:
+      description: versione json dello schema xml del SIRI profilo italiano
+      externalDocs:
+        description: specifiche del profilo italiano del SIRI
+        url: https://github.com/5Tsrl/siri-italian-profile
+    SIRI_itProfile_xml:
+      description: versione xml dello schema xml del SIRI profilo italiano
+      externalDocs:
+        description: specifiche del profilo italiano del SIRI
+        url: https://github.com/5Tsrl/siri-italian-profile
+  securitySchemes:
+    oauth2Auth:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://server-auth.prod.it/oauth2/token
+          scopes: {}
