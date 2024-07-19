@@ -40,107 +40,50 @@ paths:
                     type: string
         default:
           description: errore
-  /siri-lite/vm:
-    get:
-      tags:
-        - siri.lite
-      summary: Endpoint per le richieste SIRI LITE del flusso VM
-      parameters:
-        - name: datasetId
-          in: query
-          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
-          required: false
-          schema:
-            type: string
-            example: CCA-GTT
-        - name: maxSize
-          in: query
-          description: numero massimo di elementi da restituire
-          required: false
-          schema:
-            type: number
-            example: 10
-        - name: lineRef
-          in: query
-          description: linea di cui si vuole avere informazioni
-          required: false
-          schema:
-            type: string
-            example: IT:ITC1:Line:1
-        - name: operatorRef
-          in: query
-          description: operatore di cui si vuole avere informazioni
-          required: false
-          schema:
-            type: string
-            example: IT:ITC1:Operator:123456789011:op1
-      responses:
-        '200':
-          description: dati richiesti per il flusso vm
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SIRI_itProfile_json'
-            application/xml:
-              schema:
-                $ref: '#/components/schemas/SIRI_itProfile_xml'
-        '401':
-          description: errore di autorizzazione
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    description: breve descrizione dell'errore
-                    example: Unauthorized
-                    type: string
-        default:
-          description: errore
-  /siri-lite/et:
+  /siri-lite/estimated-timetable:
     get:
       tags:
         - siri.lite
       summary: Endpoint per le richieste SIRI LITE del flusso ET
       parameters:
-        - name: datasetId
-          in: query
-          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
-          required: false
-          schema:
-            type: string
-            example: CCA-GTT
-        - name: maxSize
-          in: query
-          description: numero massimo di elementi da restituire
-          required: false
-          schema:
-            type: number
-            example: 10
-        - name: lineRef
+        - name: LineRef
           in: query
           description: linea di cui si vuole avere informazioni
           required: false
           schema:
             type: string
             example: IT:ITC1:Line:1
-        - name: operatorRef
+        - name: OperatorRef
           in: query
           description: operatore di cui si vuole avere informazioni
           required: false
           schema:
             type: string
             example: IT:ITC1:Operator:123456789011:op1
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati. Il parametro non è usato nello scambio col DSRM
+          required: false
+          schema:
+            type: string
+            example: CCA-GTT
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire. Il parametro non è usato nello scambio col DSRM
+          required: false
+          schema:
+            type: number
+            example: 10
       responses:
         '200':
           description: dati richiesti per il flusso et
           content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SIRI_itProfile_json'
             application/xml:
               schema:
                 $ref: '#/components/schemas/SIRI_itProfile_xml'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
         '401':
           description: errore di autorizzazione
           content:
@@ -154,7 +97,7 @@ paths:
                     type: string
         default:
           description: errore
-  /siri-lite/sx:
+  /siri-lite/situation-exchange:
     get:
       tags:
         - siri.lite
@@ -162,14 +105,14 @@ paths:
       parameters:
         - name: datasetId
           in: query
-          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati. Il parametro non è usato nello scambio col DSRM
           required: false
           schema:
             type: string
             example: CCA-GTT
         - name: maxSize
           in: query
-          description: numero massimo di elementi da restituire
+          description: numero massimo di elementi da restituire. Il parametro non è usato nello scambio col DSRM
           required: false
           schema:
             type: number
@@ -178,12 +121,12 @@ paths:
         '200':
           description: dati richiesti per il flusso sx
           content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SIRI_itProfile_json'
             application/xml:
               schema:
                 $ref: '#/components/schemas/SIRI_itProfile_xml'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
         '401':
           description: errore di autorizzazione
           content:
@@ -197,43 +140,43 @@ paths:
                     type: string
         default:
           description: errore
-  /siri-lite/fm/parking:
+  /siri-lite/facility-monitoring/parking:
     get:
       tags:
         - siri.lite
       summary: Endpoint per le richieste SIRI LITE del flusso FM parcheggi
       parameters:
-        - name: datasetId
-          in: query
-          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
-          required: false
-          schema:
-            type: string
-            example: PARK-TO
-        - name: maxSize
-          in: query
-          description: numero massimo di elementi da restituire
-          required: false
-          schema:
-            type: number
-            example: 10
-        - name: facilityRef
+        - name: FacilityRef
           in: query
           description: identificativo del parcheggio di cui si vuole avere informazioni
           required: false
           schema:
             type: string
             example: IT:ITC1:Parking:1234
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati. Il parametro non è usato nello scambio col DSRM
+          required: false
+          schema:
+            type: string
+            example: PARK-TO
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire. Il parametro non è usato nello scambio col DSRM
+          required: false
+          schema:
+            type: number
+            example: 10
       responses:
         '200':
           description: dati richiesti per il flusso fm dei parcheggi
           content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SIRI_itProfile_json'
             application/xml:
               schema:
                 $ref: '#/components/schemas/SIRI_itProfile_xml'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
         '401':
           description: errore di autorizzazione
           content:
@@ -247,34 +190,34 @@ paths:
                     type: string
         default:
           description: errore
-  /siri-lite/fm/sharing:
+  /siri-lite/facility-monitoring/sharing:
     get:
       tags:
         - siri.lite
       summary: Endpoint per le richieste SIRI LITE del flusso FM sharing
       parameters:
-        - name: lat
+        - name: Latitude
           in: query
           description: latitudine del punto in cui cercare i mezzi di sharing
           required: false
           schema:
             type: string
             example: 45.05
-        - name: lon
+        - name: Longitude
           in: query
           description: longitudine del punto in cui cercare i mezzi di sharing
           required: false
           schema:
             type: string
             example: 45.05
-        - name: maxDistance
+        - name: Radius
           in: query
-          description: raggio attorno al punto specificato con lat, lon entro cui cercare i mezzi di sharing
+          description: raggio attorno al punto specificato con Latitude, Longitude entro cui cercare i mezzi di sharing
           required: false
           schema:
             type: number
             example: 100
-        - name: operators
+        - name: OperatorRef
           in: query
           description: uno o più operatori (OperatorId completo come da specifiche) di cui si vuole sapere i mezzi di sharing
           required: true
@@ -282,17 +225,74 @@ paths:
             type: array
             items:
               type: string
-            example: IT:ITC1:Operator:123456789011:op1, IT:ITC1:Operator:123456789011:op2
+            example: OperatorRef=IT:ITC1:Operator:123456789011:op1&OperatorRef=IT:ITC1:Operator:123456789011:op2
       responses:
         '200':
           description: dati richiesti per il flusso fm dello sharing
           content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/SIRI_itProfile_json'
             application/xml:
               schema:
                 $ref: '#/components/schemas/SIRI_itProfile_xml'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
+        '401':
+          description: errore di autorizzazione
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    description: breve descrizione dell'errore
+                    example: Unauthorized
+                    type: string
+        default:
+          description: errore
+  /siri-lite/vehicle-monitoring:
+    get:
+      tags:
+        - siri.lite
+      summary: Endpoint per le richieste SIRI LITE del flusso VM (non richiesto per lo scambio dati col DSRM)
+      parameters:
+        - name: LineRef
+          in: query
+          description: linea di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Line:1
+        - name: OperatorRef
+          in: query
+          description: operatore di cui si vuole avere informazioni
+          required: false
+          schema:
+            type: string
+            example: IT:ITC1:Operator:123456789011:op1
+        - name: datasetId
+          in: query
+          description: identificativo dell'agencyCode (senza prefisso IT-ITC1-) di cui si vogliono i dati
+          required: false
+          schema:
+            type: string
+            example: CCA-GTT
+        - name: maxSize
+          in: query
+          description: numero massimo di elementi da restituire
+          required: false
+          schema:
+            type: number
+            example: 10
+      responses:
+        '200':
+          description: dati richiesti per il flusso vm
+          content:
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_xml'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SIRI_itProfile_json'
         '401':
           description: errore di autorizzazione
           content:
