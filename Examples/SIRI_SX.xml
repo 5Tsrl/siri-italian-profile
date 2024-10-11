@@ -25,8 +25,7 @@
 						<StartTime>2023-02-15T10:00:00+01:00</StartTime>
 						<EndTime>2023-02-15T12:00:00+01:00</EndTime>
 					</ValidityPeriod>
-					<MiscellaneousReason>maintenance</MiscellaneousReason>
-					<ReasonName>maintenance</ReasonName>
+					<AlertCause>closedForMaintenance</AlertCause>
 					<Summary>Linea 4 limitata</Summary>
 					<Description>Il 15 Febbraio 2023 dalle 10.00 fino al 15 febbraio alle 12:00 tutte le fermate della linea 4 saranno soggette a manutenzione - Eventuali ulteriori linee transitanti da tali fermate saranno impattate solo nelle fermate di intersezione</Description>
 					<Affects>
