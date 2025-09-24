@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2017 rel. 3 sp1 (x64) (http://www.altova.com) by Rossella Panero (5T S.r.l.) -->
+<Siri xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.siri.org.uk/siri ../../SIRI_general/xsd/siri.xsd" xmlns="http://www.siri.org.uk/siri" version="2.1">
+	<ServiceDelivery>
+		<ResponseTimestamp>2023-02-15T10:26:03+01:00</ResponseTimestamp>
+		<ProducerRef>RAP_Piemonte</ProducerRef>
+		<ResponseMessageIdentifier>0001</ResponseMessageIdentifier>
+		<ProductionTimetableDelivery>
+			<ResponseTimestamp>2023-02-15T10:29:59+01:00</ResponseTimestamp>
+			<SubscriberRef>NAP</SubscriberRef>
+			<SubscriptionRef>0001</SubscriptionRef>
+			<ValidUntil>2023-02-15T10:29:59+01:00</ValidUntil>
+			<!-- Corsa con fermata soppressa sostituita da nuova fermata e capolinea con fermata non prevista -->
+			<DatedTimetableVersionFrame>
+				<RecordedAtTime>2023-02-15T10:29:59+01:00</RecordedAtTime>
+				<LineRef>IT:ITC1:Line:busATS:4</LineRef>
+				<DirectionRef>inbound</DirectionRef>
+				<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
+				<VehicleMode>bus</VehicleMode>
+				<PublishedLineName>4</PublishedLineName>
+				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+				<DatedVehicleJourney>
+					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
+					<JourneyNote>Corsa deviata con capolinea modificato</JourneyNote>
+					<Monitored>true</Monitored>
+					<DatedCalls>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>1</Order>
+							<StopPointName>Drosso Cap.</StopPointName>
+							<ExtraCall>false</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:38:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>noAlighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:000241</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>2</Order>
+							<StopPointName>Farinelli</StopPointName>
+							<Cancellation>true</Cancellation>
+							<AimedArrivalTime>2023-02-15T10:39:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:39:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:000241bis</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>2</Order>
+							<StopPointName>Farinelli bis</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:40:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:40:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:xxxxx</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>3</Order>
+							<StopPointName>Xxxxx New</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:41:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>noBoarding</DepartureBoardingActivity>
+						</DatedCall>
+					</DatedCalls>
+				</DatedVehicleJourney>
+			</DatedTimetableVersionFrame>
+			<!-- Corsa con fermate non previste -->
+			<DatedTimetableVersionFrame>
+				<RecordedAtTime>2023-02-15T10:29:59+01:00</RecordedAtTime>
+				<LineRef>IT:ITC1:Line:busATS:5</LineRef>
+				<DirectionRef>outbound</DirectionRef>
+				<VehicleMode>bus</VehicleMode>
+				<PublishedLineName>5</PublishedLineName>
+				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+				<DatedVehicleJourney>
+					<JourneyNote>Corsa con percorso diverso dalla pianificazione</JourneyNote>
+					<Monitored>true</Monitored>
+					<DatedCalls>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:X1</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>1</Order>
+							<StopPointName>X1</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:38:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>noAlighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:X2</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>2</Order>
+							<StopPointName>X2</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:40:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:40:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:X3</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>3</Order>
+							<StopPointName>X3</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:41:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>noBoarding</DepartureBoardingActivity>
+						</DatedCall>
+					</DatedCalls>
+				</DatedVehicleJourney>
+			</DatedTimetableVersionFrame>
+		</ProductionTimetableDelivery>
+	</ServiceDelivery>
+</Siri>
