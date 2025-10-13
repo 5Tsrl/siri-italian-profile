@@ -24,13 +24,16 @@
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+					<ConfidenceLevel>probablyReliable</ConfidenceLevel>
 					<VehicleLocation>
 						<Longitude>7.71378</Longitude>
 						<Latitude>45.12401</Latitude>
+						<Precision>5</Precision>
 					</VehicleLocation>
 					<Bearing>-115</Bearing>
 					<Occupancy>full</Occupancy>
 					<Delay>PT128S</Delay>
+					<VehicleStatus>offRoute</VehicleStatus>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<MonitoredCall>
 						<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
