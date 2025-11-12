@@ -31,8 +31,6 @@
 							<Order>1</Order>
 							<StopPointName>Drosso Cap.</StopPointName>
 							<ExtraCall>false</ExtraCall>
-							<AimedArrivalTime>2023-02-15T10:38:58+01:00</AimedArrivalTime>
-							<ArrivalBoardingActivity>noAlighting</ArrivalBoardingActivity>
 							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
 							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
 						</DatedCall>
@@ -66,8 +64,6 @@
 							<ExtraCall>true</ExtraCall>
 							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
 							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
-							<AimedDepartureTime>2023-02-15T10:41:58+01:00</AimedDepartureTime>
-							<DepartureBoardingActivity>noBoarding</DepartureBoardingActivity>
 						</DatedCall>
 					</DatedCalls>
 				</DatedVehicleJourney>
@@ -91,8 +87,6 @@
 							<Order>1</Order>
 							<StopPointName>X1</StopPointName>
 							<ExtraCall>true</ExtraCall>
-							<AimedArrivalTime>2023-02-15T10:38:58+01:00</AimedArrivalTime>
-							<ArrivalBoardingActivity>noAlighting</ArrivalBoardingActivity>
 							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
 							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
 						</DatedCall>
@@ -115,8 +109,6 @@
 							<ExtraCall>true</ExtraCall>
 							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
 							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
-							<AimedDepartureTime>2023-02-15T10:41:58+01:00</AimedDepartureTime>
-							<DepartureBoardingActivity>noBoarding</DepartureBoardingActivity>
 						</DatedCall>
 					</DatedCalls>
 				</DatedVehicleJourney>
