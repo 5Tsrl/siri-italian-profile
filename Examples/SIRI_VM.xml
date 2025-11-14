@@ -24,6 +24,8 @@
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+					<Monitored>false</Monitored>
+					<MonitoringError>AVM</MonitoringError>
 					<ConfidenceLevel>probablyReliable</ConfidenceLevel>
 					<VehicleLocation>
 						<Longitude>7.71378</Longitude>
