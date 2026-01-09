@@ -20,7 +20,10 @@
 				<PublishedLineName>4</PublishedLineName>
 				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
 				<DatedVehicleJourney>
-					<VehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</VehicleJourneyRef>
+					<FramedVehicleJourneyRef>
+						<DataFrameRef>2026-01-09</DataFrameRef>
+						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
+					</FramedVehicleJourneyRef>
 					<JourneyNote>Corsa deviata con capolinea modificato</JourneyNote>
 					<Monitored>true</Monitored>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
@@ -77,6 +80,10 @@
 				<PublishedLineName>5</PublishedLineName>
 				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
 				<DatedVehicleJourney>
+					<FramedVehicleJourneyRef>
+						<DataFrameRef>2026-01-09</DataFrameRef>
+						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
+					</FramedVehicleJourneyRef>
 					<JourneyNote>Corsa con percorso diverso dalla pianificazione</JourneyNote>
 					<Monitored>true</Monitored>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ999ZZ</VehicleRef>
@@ -106,6 +113,113 @@
 							<VisitNumber>1</VisitNumber>
 							<Order>3</Order>
 							<StopPointName>X3</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+						</DatedCall>
+					</DatedCalls>
+				</DatedVehicleJourney>
+			</DatedTimetableVersionFrame>
+			<!-- Corsa cancellata-->
+			<DatedTimetableVersionFrame>
+				<RecordedAtTime>2023-02-15T10:29:59+01:00</RecordedAtTime>
+				<LineRef>IT:ITC1:Line:busATS:6</LineRef>
+				<DirectionRef>outbound</DirectionRef>
+				<VehicleMode>bus</VehicleMode>
+				<PublishedLineName>5</PublishedLineName>
+				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+				<DatedVehicleJourney>
+					<FramedVehicleJourneyRef>
+						<DataFrameRef>2026-01-09</DataFrameRef>
+						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01AB</DatedVehicleJourneyRef>
+					</FramedVehicleJourneyRef>
+					<Cancellation>true</Cancellation>
+					<JourneyNote>Corsa CANCELLATA</JourneyNote>
+					<DatedCalls>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>1</Order>
+							<StopPointName>Drosso Cap.</StopPointName>
+							<ExtraCall>false</ExtraCall>
+							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:000241</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>2</Order>
+							<StopPointName>Farinelli</StopPointName>
+							<Cancellation>true</Cancellation>
+							<AimedArrivalTime>2023-02-15T10:39:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:39:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:000999</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>3</Order>
+							<StopPointName>Carducci</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+						</DatedCall>
+					</DatedCalls>
+				</DatedVehicleJourney>
+			</DatedTimetableVersionFrame>
+			<!-- Corsa nuova-->
+			<DatedTimetableVersionFrame>
+				<RecordedAtTime>2023-02-15T10:29:59+01:00</RecordedAtTime>
+				<LineRef>IT:ITC1:Line:busATS:6</LineRef>
+				<DirectionRef>outbound</DirectionRef>
+				<VehicleMode>bus</VehicleMode>
+				<PublishedLineName>5</PublishedLineName>
+				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+				<DatedVehicleJourney>
+					<FramedVehicleJourneyRef>
+						<DataFrameRef>2026-01-09</DataFrameRef>
+						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A_nuova</DatedVehicleJourneyRef>
+					</FramedVehicleJourneyRef>
+					<ExtraJourney>true</ExtraJourney>
+					<JourneyNote>Corsa Nuova non prevista in NeTEx</JourneyNote>
+					<DatedCalls>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>1</Order>
+							<StopPointName>Drosso Cap.</StopPointName>
+							<ExtraCall>false</ExtraCall>
+							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:000241bis</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>2</Order>
+							<StopPointName>Farinelli bis</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<AimedArrivalTime>2023-02-15T10:40:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:40:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:000241</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>3</Order>
+							<StopPointName>Farinelli</StopPointName>
+							<Cancellation>true</Cancellation>
+							<AimedArrivalTime>2023-02-15T10:39:58+01:00</AimedArrivalTime>
+							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
+							<AimedDepartureTime>2023-02-15T10:39:58+01:00</AimedDepartureTime>
+							<DepartureBoardingActivity>boarding</DepartureBoardingActivity>
+						</DatedCall>
+						<DatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:xxxxx</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>4</Order>
+							<StopPointName>Xxxxx New</StopPointName>
 							<ExtraCall>true</ExtraCall>
 							<AimedArrivalTime>2023-02-15T10:41:58+01:00</AimedArrivalTime>
 							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
