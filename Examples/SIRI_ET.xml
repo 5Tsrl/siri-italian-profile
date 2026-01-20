@@ -13,6 +13,7 @@
 				<RecordedAtTime>2023-02-15T10:29:59+01:00</RecordedAtTime>
 				<!-- Prima fermata registrazione -->
 				<EstimatedVehicleJourney>
+					<RecordedAtTime>2023-02-15T10:29:59+01:00</RecordedAtTime>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>inbound</DirectionRef>
 					<FramedVehicleJourneyRef>
@@ -21,16 +22,45 @@
 					</FramedVehicleJourneyRef>
 					<Cancellation>false</Cancellation>
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
+					<VehicleMode>bus</VehicleMode>
 					<PublishedLineName>4</PublishedLineName>
+					<DirectionName>Milano</DirectionName>
 					<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+					<VehicleFeatureRef>IT:ITC1:PassengerInformationEquipments:busATS:1</VehicleFeatureRef>					
 					<JourneyNote>Corsa regolare</JourneyNote>
+					<Monitored>false</Monitored>
+					<MonitoringError>AVM not working</MonitoringError>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<RecordedCalls>
+						<RecordedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642X</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>1</Order>
+							<StopPointName>Drosso Cap.</StopPointName>
+							<ExtraCall>true</ExtraCall>
+							<PredictionInaccurate>true</PredictionInaccurate>
+							<PredictionInaccurateReason>missingUpdate</PredictionInaccurateReason>
+							<AimedArrivalTime>2023-02-15T10:38:58+01:00</AimedArrivalTime>
+							<ActualArrivalTime>2023-02-15T10:32:47+01:00</ActualArrivalTime>
+							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
+							<ActualDepartureTime>2023-02-15T10:32:47+01:00</ActualDepartureTime>
+							<RecordedDepartureOccupancy>
+								<OccupancyPercentage>10</OccupancyPercentage>
+								<AlightingCount>0</AlightingCount>
+								<BoardingCount>4</BoardingCount>
+								<OnboardCount>4</OnboardCount>
+								<PushchairsOnboardCount>1</PushchairsOnboardCount>
+								<WheelchairsOnboardCount>2</WheelchairsOnboardCount>
+								<TotalNumberOfReservedSeats>1</TotalNumberOfReservedSeats>
+							</RecordedDepartureOccupancy>
+						</RecordedCall>
 						<RecordedCall>
 							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059642</StopPointRef>
 							<VisitNumber>1</VisitNumber>
 							<Order>1</Order>
 							<StopPointName>Drosso Cap.</StopPointName>
+							<Cancellation>true</Cancellation>
+							<PredictionInaccurate>false</PredictionInaccurate>		
 							<AimedArrivalTime>2023-02-15T10:38:58+01:00</AimedArrivalTime>
 							<ActualArrivalTime>2023-02-15T10:32:47+01:00</ActualArrivalTime>
 							<AimedDepartureTime>2023-02-15T10:38:58+01:00</AimedDepartureTime>
@@ -48,17 +78,34 @@
 					</RecordedCalls>
 					<EstimatedCalls>
 						<EstimatedCall>
-							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059643</StopPointRef>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059643X</StopPointRef>
 							<VisitNumber>1</VisitNumber>
 							<Order>3</Order>
 							<StopPointName>Plava</StopPointName>
+							<ExtraCall>true</ExtraCall>
 							<PredictionInaccurate>true</PredictionInaccurate>
+							<PredictionInaccurateReason>missingUpdate</PredictionInaccurateReason>	
+							<CallNote>Fermata nuova</CallNote>													
 							<AimedArrivalTime>2023-02-15T10:42:47+01:00</AimedArrivalTime>
 							<ExpectedArrivalTime>2023-02-15T10:40:47+01:00</ExpectedArrivalTime>
 							<AimedDepartureTime>2023-02-15T10:43:47+01:00</AimedDepartureTime>
 							<ExpectedDepartureTime>2023-02-15T10:41:47+01:00</ExpectedDepartureTime>
 						</EstimatedCall>
+						<EstimatedCall>
+							<StopPointRef>IT:ITC1:ScheduledStopPoint:busATS:059643</StopPointRef>
+							<VisitNumber>1</VisitNumber>
+							<Order>3</Order>
+							<StopPointName>Plava</StopPointName>
+							<Cancellation>true</Cancellation>
+							<PredictionInaccurate>false</PredictionInaccurate>					
+							<CallNote>Fermata eliminata</CallNote>
+							<AimedArrivalTime>2023-02-15T10:42:47+01:00</AimedArrivalTime>
+							<ExpectedArrivalTime>2023-02-15T10:40:47+01:00</ExpectedArrivalTime>
+							<AimedDepartureTime>2023-02-15T10:43:47+01:00</AimedDepartureTime>
+							<ExpectedDepartureTime>2023-02-15T10:41:47+01:00</ExpectedDepartureTime>
+						</EstimatedCall>						
 					</EstimatedCalls>
+					<IsCompleteStopSequence>true</IsCompleteStopSequence>
 				</EstimatedVehicleJourney>
 				<!-- Seconda fermata registrazione -->
 				<EstimatedVehicleJourney>

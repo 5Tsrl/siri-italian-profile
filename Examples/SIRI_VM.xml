@@ -14,6 +14,10 @@
 				<RecordedAtTime>2023-03-17T08:41:07</RecordedAtTime>
 				<ItemIdentifier>RAP_Piemonte</ItemIdentifier>
 				<ValidUntilTime>2023-03-17T08:41:07</ValidUntilTime>
+				<ProgressBetweenStops>
+					<LinkDistance>250</LinkDistance>
+					<Percentage>50</Percentage>
+				</ProgressBetweenStops>
 				<MonitoredVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>inbound</DirectionRef>
@@ -22,8 +26,13 @@
 						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
 					</FramedVehicleJourneyRef>
 					<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
+					<VehicleMode>bus</VehicleMode>
 					<PublishedLineName>4</PublishedLineName>
 					<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
+					<OriginRef>IT:ITC1:ScheduledStopPoint:busATS:059642</OriginRef>
+					<OriginName>To - Autostazione C.So Bolzano</OriginName>
+					<DestinationRef>IT:ITC1:ScheduledStopPoint:busATS:051615</DestinationRef>
+					<DestinationName>Milano - Ingresso A4 (Certosa)</DestinationName>
 					<Monitored>false</Monitored>
 					<MonitoringError>AVM</MonitoringError>
 					<ConfidenceLevel>probablyReliable</ConfidenceLevel>
@@ -46,6 +55,7 @@
 						<AimedDepartureTime>2023-03-17T08:45:00+01:00</AimedDepartureTime>
 						<ActualDepartureTime>2023-03-17T08:46:00+01:00</ActualDepartureTime>
 					</MonitoredCall>
+					<IsCompleteStopSequence>false</IsCompleteStopSequence>
 				</MonitoredVehicleJourney>
 			</VehicleActivity>
 			<!--- =======Veicolo 2======== -->
@@ -53,6 +63,9 @@
 				<RecordedAtTime>2023-03-17T08:47:07</RecordedAtTime>
 				<ItemIdentifier>RAP_Piemonte</ItemIdentifier>
 				<ValidUntilTime>2023-03-17T08:47:07</ValidUntilTime>
+				<ProgressBetweenStops>
+					<LinkDistance>100</LinkDistance>
+				</ProgressBetweenStops>
 				<MonitoredVehicleJourney>
 					<LineRef>IT:ITC1:Line:busATS:4</LineRef>
 					<DirectionRef>inbound</DirectionRef>

@@ -18,14 +18,16 @@
 				<JourneyPatternRef>IT:ITC1:ServiceJourneyPattern:busATS:4_01A</JourneyPatternRef>
 				<VehicleMode>bus</VehicleMode>
 				<PublishedLineName>4</PublishedLineName>
+				<DirectionName>Milano</DirectionName>
 				<OperatorRef>IT:ITC1:Operator:12345678911:busATS:11</OperatorRef>
 				<DatedVehicleJourney>
 					<FramedVehicleJourneyRef>
 						<DataFrameRef>2026-01-09</DataFrameRef>
 						<DatedVehicleJourneyRef>IT:ITC1:ServiceJourney:busATS:001_01_01A</DatedVehicleJourneyRef>
 					</FramedVehicleJourneyRef>
+					<VehicleFeatureRef>IT:ITC1:PassengerInformationEquipments:busATS:1</VehicleFeatureRef>
 					<JourneyNote>Corsa deviata con capolinea modificato</JourneyNote>
-					<Monitored>true</Monitored>
+					<Monitored>false</Monitored>
 					<VehicleRef>IT:ITC1:Vehicle:busATS:ZZ998ZZ</VehicleRef>
 					<DatedCalls>
 						<DatedCall>
@@ -54,6 +56,7 @@
 							<Order>2</Order>
 							<StopPointName>Farinelli bis</StopPointName>
 							<ExtraCall>true</ExtraCall>
+							<RequestStop>true</RequestStop>
 							<AimedArrivalTime>2023-02-15T10:40:58+01:00</AimedArrivalTime>
 							<ArrivalBoardingActivity>alighting</ArrivalBoardingActivity>
 							<AimedDepartureTime>2023-02-15T10:40:58+01:00</AimedDepartureTime>
